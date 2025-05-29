@@ -1,6 +1,6 @@
 # Makefile for building CoreDNS
 GITCOMMIT?=$(shell git describe --dirty --always)
-BINARY:=coredns
+BINARY:=./bin/coredns
 SYSTEM:=
 CHECKS:=check
 BUILDOPTS?=-v
@@ -38,4 +38,4 @@ pb:
 .PHONY: clean
 clean:
 	go clean
-	rm -f coredns
+	rm -f "./bin/coredns"

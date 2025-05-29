@@ -5,3 +5,6 @@ Corefile
 build/
 release/
 vendor/
+
+# IDEA
+.idea
