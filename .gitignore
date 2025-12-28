@@ -8,3 +8,6 @@ vendor/
 
 # IDEA
 .idea
+
+# mac OS
+.DS_Store

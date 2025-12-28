@@ -1,0 +1,1 @@
+# /etc/resolv.conf 文件详解

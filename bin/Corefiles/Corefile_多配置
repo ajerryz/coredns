@@ -1,0 +1,20 @@
+.:53 {
+    bind 127.0.0.1
+    log
+    errors
+
+    # example.com 静态 / 权威
+    hosts {
+        192.168.1.100 api.example.com
+        192.168.1.101 web.example.com
+        fallthrough
+    }
+
+    file ./zones/example.com.zone example.com
+
+    # 缓存
+    cache 300
+
+    # 其他域名兜底转发
+    forward . 192.168.10.1
+}
